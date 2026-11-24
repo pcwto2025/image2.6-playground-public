@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image2.6 视觉玩法库</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#050505;color:#e8e8e8;font-family:Inter,"PingFang SC","Microsoft YaHei",sans-serif}
+a{color:#00E676;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 20px 64px}
+header{margin-bottom:8px}
+h1{font-size:32px;margin:0 0 8px}
+.sub{color:#9a9a9a;line-height:1.7;margin:0 0 16px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}
+.badge{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);border-radius:999px;padding:5px 12px;font-size:13px;color:#c9c9c9}
+.badge b{color:#00E676}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;height:180px;object-fit:cover;display:block;background:#111}
+.body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.num{color:#00E676;font-weight:700;font-size:13px;letter-spacing:.05em}
+h2{margin:0;font-size:19px;line-height:1.4}
+p{margin:0;color:#bdbdbd;line-height:1.65;font-size:14px}
+.links{margin-top:auto;display:flex;gap:14px;flex-wrap:wrap;font-size:14px;padding-top:6px}
+.note{margin-top:24px;padding:14px 16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);border-radius:16px;color:#bdbdbd;font-size:13px;line-height:1.8}
+.note b{color:#e8e8e8}
+footer{margin-top:28px;color:#777;font-size:13px;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Image2.6 视觉玩法库</h1>
+<p class="sub">从一个故事、一张图片或一段文字出发，做出可以展示、修改和复用的视觉作品。共 6 种玩法：纸雕定格动画、生物数字成长档案、横向二十连图、电影标题设计、POSEWEAR 随机三合一写真、地标建筑 3D 末帧接龙。</p>
+<div class="badges"><span class="badge">来源 <b>Fork</b>：pcwto2025 / image2.6-playground-public</span><span class="badge">上游：nima2qisi2 / image2.6-playground-public</span><span class="badge">部署：Cloudflare Pages · 无构建命令</span></div>
+<p class="sub">用法：先看效果，再进模块说明复制提示词或安装 Skill。Skill 是供 Agent 使用的制作说明，下载仓库不会自动装 Python 依赖、也不会自动生成模型。</p>
+<p><a href="README.md">总说明 README</a> · <a href="%E9%A1%B9%E7%9B%AE%E5%AF%BC%E8%88%AA.md">项目导航</a> · <a href="https://github.com/pcwto2025/image2.6-playground-public">在 GitHub 上查看本 Fork</a></p>
+</header>
+
+<div class="grid">
+
+<section class="card">
+<img src="%E7%8E%A9%E6%B3%95%E5%BA%93/02_%E5%AE%9A%E6%A0%BC%E5%89%AA%E7%BA%B8%E9%A3%8E%E6%A0%BC%E5%8A%A8%E7%94%BB/skill/continuous-stop-motion-gif/assets/red-hood-final/%E8%B5%84%E4%BA%A7/%E5%B0%8F%E7%BA%A2%E5%B8%BD.png" alt="小红帽">
+<div class="body"><div class="num">02 · 定格剪纸风格动画</div><h2>小红帽 · 门后的影子</h2><p>把故事做成有动作和反转的短片：十镜头叙事、分层动作与同步拟音，交付 GIF / MP4 与可修改工程。</p><div class="links"><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/02_%E5%AE%9A%E6%A0%BC%E5%89%AA%E7%BA%B8%E9%A3%8E%E6%A0%BC%E5%8A%A8%E7%94%BB/README.md">玩法说明</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/02_%E5%AE%9A%E6%A0%BC%E5%89%AA%E7%BA%B8%E9%A3%8E%E6%A0%BC%E5%8A%A8%E7%94%BB/%E6%A1%88%E4%BE%8B/%E5%B0%8F%E7%BA%A2%E5%B8%BD_%E9%97%A8%E5%90%8E%E7%9A%84%E5%BD%B1%E5%AD%90_6.2/film.mp4">带声 MP4（17MB）</a><a href="https://raw.githubusercontent.com/nima2qisi2/image2.6-playground-public/main/%E7%8E%A9%E6%B3%95%E5%BA%93/02_%E5%AE%9A%E6%A0%BC%E5%89%AA%E7%BA%B8%E9%A3%8E%E6%A0%BC%E5%8A%A8%E7%94%BB/%E6%A1%88%E4%BE%8B/%E5%B0%8F%E7%BA%A2%E5%B8%BD_%E9%97%A8%E5%90%8E%E7%9A%84%E5%BD%B1%E5%AD%90_6.2/preview.gif">完整 GIF（36.8MB，上游直链）</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/02_%E5%AE%9A%E6%A0%BC%E5%89%AA%E7%BA%B8%E9%A3%8E%E6%A0%BC%E5%8A%A8%E7%94%BB/skill/continuous-stop-motion-gif/SKILL.md">Skill</a></div></div>
+</section>
+
+<section class="card">
+<img src="%E7%8E%A9%E6%B3%95%E5%BA%93/04_%E7%94%9F%E7%89%A9%E6%95%B0%E5%AD%97%E6%88%90%E9%95%BF%E6%A1%A3%E6%A1%88/%E6%A1%88%E4%BE%8B/%E6%B5%B7%E9%A9%AC_v21/%E6%88%90%E7%86%9F%E6%9C%9F.png" alt="海马成熟期">
+<div class="body"><div class="num">04 · 生物数字成长档案</div><h2>海马 v21 · 五阶段成长档案</h2><p>把阶段图片放进统一档案版式，用主体变化、坐标、细线和进度组织成长过程。另有树蛙案例与迭代记录。</p><div class="links"><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/04_%E7%94%9F%E7%89%A9%E6%95%B0%E5%AD%97%E6%88%90%E9%95%BF%E6%A1%A3%E6%A1%88/README.md">玩法说明</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/04_%E7%94%9F%E7%89%A9%E6%95%B0%E5%AD%97%E6%88%90%E9%95%BF%E6%A1%A3%E6%A1%88/%E6%A1%88%E4%BE%8B/%E6%B5%B7%E9%A9%AC_v21/%E6%B5%B7%E9%A9%AC%E6%88%90%E9%95%BF_v21.gif">海马成长 GIF</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/04_%E7%94%9F%E7%89%A9%E6%95%B0%E5%AD%97%E6%88%90%E9%95%BF%E6%A1%A3%E6%A1%88/%E6%A1%88%E4%BE%8B/%E6%A0%91%E8%9B%99_20261113/%E7%BA%A2%E7%9C%BC%E6%A0%91%E8%9B%99_%E6%95%B0%E5%AD%97%E6%88%90%E9%95%BF%E6%A1%A3%E6%A1%88.gif">树蛙 GIF</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/04_%E7%94%9F%E7%89%A9%E6%95%B0%E5%AD%97%E6%88%90%E9%95%BF%E6%A1%A3%E6%A1%88/skill/specimen-growth-archive/SKILL.md">Skill</a></div></div>
+</section>
+
+<section class="card">
+<img src="%E7%8E%A9%E6%B3%95%E5%BA%93/06_%E6%A8%AA%E5%90%91%E4%BA%8C%E5%8D%81%E8%BF%9E%E5%9B%BE/%E6%A1%88%E4%BE%8B/%E8%B7%AF%E9%A3%9EVS%E9%A3%9F%E7%89%A9/%E9%A2%84%E8%A7%88.png" alt="路飞 VS 食物">
+<div class="body"><div class="num">06 · 横向二十连图</div><h2>路飞 VS 食物 / 索隆 VS 鹰眼</h2><p>做一幅从左到右逐步揭晓的长图：人物分居两端、元素连接中段，再导出 20 张顺序 PNG 与切片 ZIP。</p><div class="links"><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/06_%E6%A8%AA%E5%90%91%E4%BA%8C%E5%8D%81%E8%BF%9E%E5%9B%BE/README.md">玩法说明</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/06_%E6%A8%AA%E5%90%91%E4%BA%8C%E5%8D%81%E8%BF%9E%E5%9B%BE/%E6%A1%88%E4%BE%8B/%E8%B7%AF%E9%A3%9EVS%E9%A3%9F%E7%89%A9/%E6%A8%AA%E5%B9%85.png">路飞横幅</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/06_%E6%A8%AA%E5%90%91%E4%BA%8C%E5%8D%81%E8%BF%9E%E5%9B%BE/%E6%A1%88%E4%BE%8B/%E7%B4%A2%E9%9A%86VS%E9%B9%B0%E7%9C%BC/%E6%A8%AA%E5%B9%85.png">索隆横幅</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/06_%E6%A8%AA%E5%90%91%E4%BA%8C%E5%8D%81%E8%BF%9E%E5%9B%BE/skill/panorama-20/SKILL.md">Skill</a></div></div>
+</section>
+
+<section class="card">
+<img src="%E7%8E%A9%E6%B3%95%E5%BA%93/07_%E7%94%B5%E5%BD%B1%E6%A0%87%E9%A2%98%E8%AE%BE%E8%AE%A1/assets/previews/ct-11.png" alt="CT-11 电影标题">
+<div class="body"><div class="num">07 · 电影标题设计</div><h2>CT-01 至 CT-32 · 32 款标题</h2><p>按字形、材质、构图和光线选标题方向，再替换成自己的文字。DMIAO 轮播与静态索引可逐款比较。</p><div class="links"><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/07_%E7%94%B5%E5%BD%B1%E6%A0%87%E9%A2%98%E8%AE%BE%E8%AE%A1/README.md">玩法说明</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/07_%E7%94%B5%E5%BD%B1%E6%A0%87%E9%A2%98%E8%AE%BE%E8%AE%A1/preview.html">打开 preview.html</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/07_%E7%94%B5%E5%BD%B1%E6%A0%87%E9%A2%98%E8%AE%BE%E8%AE%A1/assets/dmiao-32-styles-5s.gif">32 款轮播 GIF</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/07_%E7%94%B5%E5%BD%B1%E6%A0%87%E9%A2%98%E8%AE%BE%E8%AE%A1/SKILL.md">Skill</a></div></div>
+</section>
+
+<section class="card">
+<img src="%E7%8E%A9%E6%B3%95%E5%BA%93/08_POSEWEAR_RANDOM_%E9%9A%8F%E6%9C%BA%E4%B8%89%E5%90%88%E4%B8%80%E5%86%99%E7%9C%9F/assets/solo-preview.webp" alt="单人写真">
+<div class="body"><div class="num">08 · POSEWEAR RANDOM</div><h2>随机三合一写真 · 单人 / 双人</h2><p>从 PoseWear 真实抽取人像 × 姿势 × 服装，做摄影级 AI 写真。展示图为用户提供的单人 → 双人连续性创作。</p><div class="links"><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/08_POSEWEAR_RANDOM_%E9%9A%8F%E6%9C%BA%E4%B8%89%E5%90%88%E4%B8%80%E5%86%99%E7%9C%9F/README.md">玩法说明</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/08_POSEWEAR_RANDOM_%E9%9A%8F%E6%9C%BA%E4%B8%89%E5%90%88%E4%B8%80%E5%86%99%E7%9C%9F/assets/solo-full.webp">单人成片</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/08_POSEWEAR_RANDOM_%E9%9A%8F%E6%9C%BA%E4%B8%89%E5%90%88%E4%B8%80%E5%86%99%E7%9C%9F/assets/duo-full.webp">双人成片</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/08_POSEWEAR_RANDOM_%E9%9A%8F%E6%9C%BA%E4%B8%89%E5%90%88%E4%B8%80%E5%86%99%E7%9C%9F/skill/posewear-random/SKILL.md">Skill</a></div></div>
+</section>
+
+<section class="card">
+<img src="%E7%8E%A9%E6%B3%95%E5%BA%93/09_%E5%9C%B0%E6%A0%87%E5%BB%BA%E7%AD%91%E7%AD%913D%E6%9C%AB%E5%B8%A7%E6%8E%A5%E9%BE%99/%E6%A1%88%E4%BE%8B/%E6%95%85%E5%AE%AB%E5%A4%AA%E5%92%8C%E6%AE%BF_%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E7%89%88/taihedian-procedural-still.png" alt="太和殿">
+<div class="body"><div class="num">09 · 地标建筑 3D 末帧接龙</div><h2>大阪城 / 故宫太和殿 · 精确 30 秒</h2><p>Blender 出静止画，再以末帧接龙做 3 段 10 秒视频，拼成精确 30 秒成片。</p><div class="links"><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/09_%E5%9C%B0%E6%A0%87%E5%BB%BA%E7%AD%91%E7%AD%913D%E6%9C%AB%E5%B8%A7%E6%8E%A5%E9%BE%99/README.md">玩法说明</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/09_%E5%9C%B0%E6%A0%87%E5%BB%BA%E7%AD%91%E7%AD%913D%E6%9C%AB%E5%B8%A7%E6%8E%A5%E9%BE%99/%E6%A1%88%E4%BE%8B/%E6%95%85%E5%AE%AB%E5%A4%AA%E5%92%8C%E6%AE%BF_%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E7%89%88/taihedian-30s-final.mp4">太和殿 30 秒 MP4</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/09_%E5%9C%B0%E6%A0%87%E5%BB%BA%E7%AD%91%E7%AD%913D%E6%9C%AB%E5%B8%A7%E6%8E%A5%E9%BE%99/%E6%A1%88%E4%BE%8B/%E5%A4%A7%E9%98%AA%E5%9F%8E_PLATEAU%E6%95%B0%E6%8D%AE%E7%89%88/preview.gif">大阪城预览 GIF</a><a href="https://raw.githubusercontent.com/nima2qisi2/image2.6-playground-public/main/%E7%8E%A9%E6%B3%95%E5%BA%93/09_%E5%9C%B0%E6%A0%87%E5%BB%BA%E7%AD%91%E7%AD%913D%E6%9C%AB%E5%B8%A7%E6%8E%A5%E9%BE%99/%E6%A1%88%E4%BE%8B/%E5%A4%A7%E9%98%AA%E5%9F%8E_PLATEAU%E6%95%B0%E6%8D%AE%E7%89%88/osaka-castle-plateau-30s-final.mp4">大阪城 30 秒 MP4（26.4MB，上游直链）</a><a href="%E7%8E%A9%E6%B3%95%E5%BA%93/09_%E5%9C%B0%E6%A0%87%E5%BB%BA%E7%AD%91%E7%AD%913D%E6%9C%AB%E5%B8%A7%E6%8E%A5%E9%BE%99/skill/landmark-3d-chain/SKILL.md">Skill</a></div></div>
+</section>
+
+</div>
+
+<div class="note"><b>关于两个大文件：</b>Cloudflare Pages 单文件上限 25MB。本站部署的 Fork 里已移除 2 个超限文件（小红帽 preview.gif 36.8MB、大阪城 30 秒 MP4 26.4MB），首页上用“上游直链”标出，点开仍能从上游 GitHub raw 看到原文件；其余 222 个文件均在本站内。其余内容与上游一致，未改任何原文件。</div>
+
+<footer>部署方式：Cloudflare Pages（GitHub 连接，production 分支 main，无构建命令）。上游仓库：github.com/nima2qisi2/image2.6-playground-public · 本站 Fork：github.com/pcwto2025/image2.6-playground-public</footer>
+</div>
+</body>
+</html>
